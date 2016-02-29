@@ -1,0 +1,5 @@
+#adds all java files to git stage, commits them with dumb message
+#pushes them to origin master
+git add *.java
+git commit -m "automated"
+git push origin master

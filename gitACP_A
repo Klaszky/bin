@@ -1,0 +1,6 @@
+#!/bin/bash
+# Adds all files in a folder to git stage, commit and pushes
+
+git add *
+git commit -m "automated"
+git push origin master

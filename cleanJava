@@ -1,0 +1,2 @@
+# cleanJava
+rm -f *.class
