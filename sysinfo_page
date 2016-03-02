@@ -3,7 +3,8 @@
 # sysinfo_page - A script to produce an HTML file
 
 title="My System Information"
-
+RIGHT_NOW=$(date +"%x %r %Z") 
+TIME_STAMP="Updated on $RIGHT_NOW by $USER" 
 cat <<- _EOF_
 	<html>
 	<head>
@@ -14,6 +15,7 @@ cat <<- _EOF_
 
 	<body>
 	<h1>$title $HOSTNAME</h1>
+	<p>$TIME_STAMP</p>
 	</body>
 	</html>
 _EOF_
