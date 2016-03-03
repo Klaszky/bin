@@ -1,4 +1,4 @@
 # build all java files in a folder
 javac *.java
-
+notify-send "All .java files in $PWD have been compiled"
 

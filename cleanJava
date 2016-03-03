@@ -1,2 +1,3 @@
 # cleanJava
 rm -f *.class
+notify-send "All .class files in $PWD have been removed"
