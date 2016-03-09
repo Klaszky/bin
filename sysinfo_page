@@ -44,8 +44,12 @@ home_space()
 			du -s /home/* | sort -nr
 		echo "</pre>"
 	fi
-
 }
+
+system_info
+show_uptime
+drive_space
+home_space
 
 ### Main
 
@@ -59,6 +63,10 @@ cat <<- _EOF_
 
 	<body>
 	<h1>$title $HOSTNAME</h1>
+	$SYSTEM_INFO
+	$SHOW_UPTIME
+	$DRIVE_SPACE
+	$HOME_SPACE
 	<p>$TIME_STAMP</p>
 	</body>
 	</html>
